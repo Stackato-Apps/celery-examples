@@ -1,0 +1,11 @@
+name: celery-example
+mem: 128M
+framework:
+  type: python
+  runtime: python27
+services:
+  ${name}-mq: rabbitmq
+hooks:
+  pre-running:
+    - nohup celeryd &
+ignores: [".git"]
