@@ -1,10 +1,9 @@
 import sys
 import os
-import json
 
 sys.path.append('.')
 
-rabbitmq_url = json.loads(os.environ['RABBITMQ_URL'])
+rabbitmq_url = os.environ['RABBITMQ_URL']
 
 BROKER_URL = rabbitmq_url
 
