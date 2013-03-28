@@ -15,7 +15,7 @@ def hello_world_app(environ, start_response):
     pyver = '.'.join(map(str, tuple(sys.version_info)[:3]))
 
     # The returned object is going to be printed
-    return ["Please run 'stackato run celery-examples python demo.py'." % pyver]
+    return ["Hello World (from Python %s WSGI)" % pyver]
     
 # For gunicorn
 application = hello_world_app
