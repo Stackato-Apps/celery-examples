@@ -5,7 +5,7 @@ framework:
   runtime: python27
 services:
   ${name}-mq: rabbitmq
-hooks:
-  pre-running:
-    - nohup celeryd &
+processes:
+  web: ~
+command: celeryd
 ignores: [".git"]
