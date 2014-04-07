@@ -7,5 +7,5 @@ services:
   ${name}-mq: rabbitmq
 processes:
   web: ~
-command: celeryd
+command: celery worker
 ignores: [".git"]

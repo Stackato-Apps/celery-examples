@@ -19,7 +19,7 @@ ensure that you have the Stackato CLI installed (which can be found [here][activ
 
 ### To run the demo
 
-    $ stackato run celery-example python demo.py
+    $ stackato run python demo.py
 
 [activestate-cli-download]: http://www.activestate.com/stackato/download_client
 [rabbitmq-homepage]: http://www.rabbitmq.com/
