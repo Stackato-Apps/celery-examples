@@ -1,4 +1,4 @@
-name: celery-example
+name: celery-examples
 mem: 128M
 framework:
   type: python
