@@ -1,15 +1,10 @@
 applications:
 - name: celery-examples
-  command: celery worker
-  framework:
-    name: python
   mem: 128M
-  runtime: python27
   services:
     ${name}-mq:
       type: rabbitmq
   stackato:
     ignores:
     - .git
-    processes:
-      web: ~
+  url: []
