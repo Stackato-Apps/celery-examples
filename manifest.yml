@@ -1,6 +1,6 @@
 applications:
 - name: celery-examples
-  mem: 128M
+  memory: 128M
   services:
     ${name}-mq:
       type: rabbitmq
